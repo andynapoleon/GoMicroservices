@@ -19,7 +19,7 @@ func NewLog() *Log {
 // Append a record to the end of the log
 func (c *Log) Append(record Record) (uint64, error) {
 	c.mu.Lock()
-	defer c.mu.Unlock() // this will be called when the function returns
+	defer c.mu.Unlock() // this will be called when the function returns even if panic
 	record.Offset = uint64(len(c.records))
 	c.records = append(c.records, record)
 	return record.Offset, nil
