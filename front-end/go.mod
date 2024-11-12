@@ -1,3 +1,3 @@
-module github.com/andynapoleon/GoMicroservices
+module frontend
 
 go 1.23.0
