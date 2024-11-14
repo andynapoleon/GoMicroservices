@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"errors"
+	"fmt"
 	"net/http"
 )
 
@@ -123,6 +124,7 @@ func (app *Config) authenticate(w http.ResponseWriter, a AuthPayload) {
 		app.errorJSON(w, errors.New("invalid credentials"))
 		return
 	} else if response.StatusCode != http.StatusAccepted {
+		fmt.Println("ERROR Is", response.StatusCode)
 		app.errorJSON(w, errors.New("error calling auth service"))
 		return
 	}
@@ -164,7 +166,6 @@ func (app *Config) sendMail(w http.ResponseWriter, msg MailPayload) {
 	}
 
 	request.Header.Set("Content-Type", "application/json")
-
 
 	client := &http.Client{}
 	response, err := client.Do(request)
