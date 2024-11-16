@@ -68,7 +68,7 @@ func (app *Config) HandleSubmission(w http.ResponseWriter, r *http.Request) {
 	case "auth":
 		app.authenticate(w, requestPayload.Auth)
 	case "log":
-		app.logItemViaRPC(w, requestPayload.Log)
+		app.logEventViaRabbit(w, requestPayload.Log)
 	case "mail":
 		app.sendMail(w, requestPayload.Mail)
 	default:
@@ -296,7 +296,7 @@ func (app *Config) LogViaGRPC(w http.ResponseWriter, r *http.Request) {
 	defer cancel()
 
 	_, err = c.WriteLog(ctx, &logs.LogRequest{
-		LogEntry: &logs.Log {
+		LogEntry: &logs.Log{
 			Name: requestPayload.Log.Name,
 			Data: requestPayload.Log.Data,
 		},
