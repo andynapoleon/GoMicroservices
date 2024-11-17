@@ -4,3 +4,9 @@ This recently started ongoing project is some simple microservices in Go, allowi
 
 Services: front-end, authentication, logging, broker, listener, mail.
 
+Tech Stack: Go, gRPC, RabbitMQ, Caddy Web Server, Docker, MongoDB, PostgreSQL.
+
+Deployed using Docker Swarm & Kubernetes.
+
+
+
