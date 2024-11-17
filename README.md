@@ -6,7 +6,7 @@ Simple microservices written in Go, designed to explore and learn distributed sy
 
 This ongoing project showcases microservices that perform various tasks, enabling an understanding of concepts like communication, scalability, and orchestration in a distributed environment.
 
-_Almost done! Only deployment to Docker Swarms and Kubernetes is left to go!_
+_Almost done! Only deployment to Docker Swarms and Kubernetes is left to go❗_
 
 ### Microservices Included:
 - **Front-End**: Serves the UI for user interactions (mostly just endpoint testing).
