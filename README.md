@@ -20,7 +20,7 @@ _Almost done! Only deployment to Docker Swarms and Kubernetes is left to go!_
 - **Programming Language**: [Go](https://golang.org/)
 - **Communication**: gRPC
 - **Message Queues**: RabbitMQ
-- **Web Server**: Caddy
+- **Reverse Proxy**: Caddy
 - **Databases**: MongoDB, PostgreSQL
 - **Containerization**: Docker
 
