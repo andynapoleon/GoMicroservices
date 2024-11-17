@@ -8,7 +8,7 @@ This ongoing project showcases microservices that perform various tasks, enablin
 
 _Almost done! Only deployment to Docker Swarms and Kubernetes is left to go❗_
 
-### Microservices Included:
+### Microservices
 - **Front-End**: Serves the UI for user interactions (mostly just endpoint testing).
 - **Authentication**: Manages user logins (simple bcrypt-hashed password checking).
 - **Logging**: Tracks and stores application logs for monitoring.
