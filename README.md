@@ -34,8 +34,3 @@ The project is containerized and can be deployed using (both will be done):
 - **Learn**: Deepen understanding of distributed systems.
 - **Experiment**: Test microservices architecture and orchestration tools.
 - **Build**: Create a foundation for future distributed systems projects.
-
-### License
-
-This project is licensed under the [MIT License](LICENSE).
-
