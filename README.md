@@ -39,7 +39,3 @@ The project is containerized and can be deployed using (both will be done):
 
 This project is licensed under the [MIT License](LICENSE).
 
----
-
-Created with ❤️ by [Andy Tran](https://github.com/andynapoleon).
-
