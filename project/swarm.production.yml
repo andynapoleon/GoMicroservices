@@ -18,7 +18,7 @@ services:
       - caddy_config:/config
   
   front-end:
-    image: aqtran/front-end:1.0.3
+    image: aqtran/front-end:1.0.5
     deploy:
       mode: replicated
       replicas: 1
