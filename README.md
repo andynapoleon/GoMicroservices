@@ -28,7 +28,7 @@ This ongoing project showcases microservices that perform various tasks, enablin
 
 The project is containerized and can be deployed using:
 
-- Docker Swarm (done✅)
+- Docker Swarm (done ✅)
 - Kubernetes (in-progress❗)
 
 ### Goals
