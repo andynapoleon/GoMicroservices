@@ -6,9 +6,8 @@ Simple microservices written in Go, designed to explore and learn distributed sy
 
 This ongoing project showcases microservices that perform various tasks, enabling an understanding of concepts like communication, scalability, and orchestration in a distributed environment.
 
-_Almost done! Currently in the process of deploying to Docker Swarms and Kubernetes❗_
-
 ### Microservices
+
 - **Front-End**: Serves the UI for user interactions (mostly just endpoint testing).
 - **Authentication**: Manages user logins (simple bcrypt-hashed password checking).
 - **Logging**: Tracks and stores application logs for monitoring.
@@ -17,6 +16,7 @@ _Almost done! Currently in the process of deploying to Docker Swarms and Kuberne
 - **Mail Service**: Handles email notifications.
 
 ### Tech Stack
+
 - **Programming Language**: [Go](https://golang.org/)
 - **Communication**: gRPC
 - **Message Queues**: RabbitMQ
@@ -25,9 +25,11 @@ _Almost done! Currently in the process of deploying to Docker Swarms and Kuberne
 - **Containerization**: Docker
 
 ### Deployment
-The project is containerized and can be deployed using (both will be done):
-- Docker Swarm
-- Kubernetes
+
+The project is containerized and can be deployed using:
+
+- Docker Swarm (done)
+- Kubernetes (in-progress❗)
 
 ### Goals
 
