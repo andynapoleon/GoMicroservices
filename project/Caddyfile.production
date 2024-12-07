@@ -21,16 +21,13 @@
 	}
 }
 
-172.234.254.188:80 {
-    encode zstd gzip
-    import static
-    import security
+swarm.andynapoleon.online:80 {
+	encode zstd gzip
+	import static
 
-    handle_path /broker/* {
-        reverse_proxy http://broker-service:8080
-    }
+	reverse_proxy  http://front-end:8081
+}
 
-    handle {
-        reverse_proxy http://front-end:8081
-    }
+broker.andynapoleon.online:80 {
+	reverse_proxy http://broker-service:8080
 }
