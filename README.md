@@ -18,7 +18,7 @@ This ongoing project showcases microservices that perform various tasks, enablin
 ### Tech Stack
 
 - **Programming Language**: [Go](https://golang.org/)
-- **Communication**: gRPC
+- **Communication**: REST, AMQP, gRPC
 - **Message Queues**: RabbitMQ
 - **Reverse Proxy**: Caddy
 - **Databases**: MongoDB, PostgreSQL
